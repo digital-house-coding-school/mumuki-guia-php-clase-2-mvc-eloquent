@@ -58,7 +58,9 @@ public function testRutas(): void {
     }
   }
   
-  $this->assertTrue($ruta !== NULL, "sarasa");
+  $this->assertTrue($ruta !== NULL, "Falta la ruta a /peliculas/ID");
   
-  $this->assertTrue(is_string($ruta["action"]), "sarasa2");
+  $this->assertTrue(is_string($ruta["action"]), "El segundo parámetro de la ruta a /peliculas/ID debería ser un string");
+  
+  $this->assertTrue($ruta["action"] === "PeliculasController@detalle", "La ruta /peliculas/ID debería dirigirse a PeliculasController en el método detalle");
 }
