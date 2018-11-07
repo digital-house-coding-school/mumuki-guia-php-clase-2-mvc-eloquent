@@ -52,7 +52,6 @@ public function testRutas(): void {
     
     if (count($partes) == 2 && $partes[0] === "peliculas")
     {
-      var_dump($partes);exit;
       $ruta = $rutas;
     }
   }
