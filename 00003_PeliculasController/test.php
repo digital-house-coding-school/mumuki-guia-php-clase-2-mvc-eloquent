@@ -28,9 +28,13 @@ public function testPeliculasDetalle(): void {
   
   $this->assertTrue(count($params) === 1, "El método detalle debe recibir un parámetro");
   
-  $resul = $pc->detalle(3);
+  try {
+    $resul = $pc->detalle(3);
+  } catch (Exception $e) {
+    $this->assertTrue(false, "El método detalle debería compartir con la vista una (y solo una) variable");
+  }
   
   $this->assertTrue($pasePorView, "Parecería que no utilizaste la función view");
   
-  $this->assertTrue($resul === "detallePelicula3", "El método detaller debería redirigir a la vista detallePelicula y tiene que tener compartido el id que llega como parámetro. No olvides además de que deberías haber utilizado el return");
+  $this->assertTrue($resul === "detallePelicula3", "El método detalle debería redirigir a la vista detallePelicula y tiene que tener compartido el id que llega como parámetro. No olvides además de que deberías haber utilizado el return");
 }
