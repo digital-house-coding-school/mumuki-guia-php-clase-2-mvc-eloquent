@@ -39,3 +39,26 @@ public function testPeliculas(): void {
   
   $this->assertTrue($ruta["action"] === "PeliculasController@listado", "La ruta /peliculas debe dirigirse a PeliculasController en el método listado");
 }
+
+public function testDetallePelicula(): void {
+  $rutasGet = Route::$routesGet;
+  
+  $ruta == null;
+  
+  foreach ($rutasGet as $rutas) {
+    $nombreRuta = $rutas["route"];
+    
+    $primerCaracter = substr($nombreRuta, 0, 1);
+  
+    if ($primerCaracter == "/") {
+      $nombreRuta = substr($nombreRuta, 1);
+    }
+    
+    $partes = explode("/", $nombreRuta);
+    
+    if (count($partes == 2) && $partes[0] === "peliculas")
+    {
+      echo "VAMO BIEN";exit;
+    }
+  }
+}
