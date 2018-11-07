@@ -9,3 +9,5 @@ En este ejercicio te pedimos que escribas tres rutas:
 > 2. Una ruta a **/peliculas** que lleve a **PeliculasController** con el método **listado**
 
 > 3. Una ruta a **/peliculas/ID** donde ID será reemplazado por un número. Por ejemplo, una ruta válida sería **/peliculas/5**. Esta ruta llevará al archivo **PeliculasController** a la función **detalle**
+
+Podes asumir para este ejercicio que estas escribiendo directamente en el archivo de rutas
