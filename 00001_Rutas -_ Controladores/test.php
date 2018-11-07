@@ -50,7 +50,7 @@ public function testRutas(): void {
     
     $partes = explode("/", $nombreRuta);
     
-    if (count($partes == 2) && $partes[0] === "peliculas")
+    if (count($partes) == 2 && $partes[0] === "peliculas")
     {
       var_dump($partes);exit;
       $ruta = $rutas;
