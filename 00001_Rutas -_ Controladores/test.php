@@ -2,9 +2,7 @@ public function testRutas(): void {
   $rutasGet = Route::$routesGet;
   
   $this->assertTrue(count($rutasGet) == 3, "Debería haber tres rutas en tu solución por GET");
-}
 
-public function testGeneros(): void {
   $rutasGet = Route::$routesGet;
   
   $ruta == null;
@@ -20,9 +18,7 @@ public function testGeneros(): void {
   $this->assertTrue(is_string($ruta["action"]), "El segundo parámetro de la ruta debe ser un string");
   
   $this->assertTrue($ruta["action"] === "GenerosController@listado", "La ruta /generos debe dirigirse a GenerosController en el método listado");
-}
 
-public function testPeliculas(): void {
   $rutasGet = Route::$routesGet;
   
   $ruta == null;
@@ -38,9 +34,7 @@ public function testPeliculas(): void {
   $this->assertTrue(is_string($ruta["action"]), "El segundo parámetro de la ruta debe ser un string");
   
   $this->assertTrue($ruta["action"] === "PeliculasController@listado", "La ruta /peliculas debe dirigirse a PeliculasController en el método listado");
-}
 
-public function testDetallePelicula(): void {
   $rutasGet = Route::$routesGet;
   
   $ruta == null;
