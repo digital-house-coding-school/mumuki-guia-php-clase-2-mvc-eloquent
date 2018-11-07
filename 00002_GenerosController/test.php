@@ -11,5 +11,5 @@ public function testGenerosController(): void {
   
   $this->assertTrue($pasePorView, "Parecería que no utilizaste la función view");
   
-  $this->assertTrue($resul === "listadoGeneros", "El método debería redirigir a la vista listadoGeneros");
+  $this->assertTrue($resul === "listadoGeneros", "El método debería redirigir a la vista listadoGeneros. ¿Olvidaste el return?");
 }
