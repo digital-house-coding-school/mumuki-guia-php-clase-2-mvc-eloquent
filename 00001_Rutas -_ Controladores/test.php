@@ -1,7 +1,7 @@
 public function testRutas(): void {
   $rutasGet = Route::$routesGet;
   
-  $this->assertTrue(count($rutasGet) == 3, "Debería haber una ruta en tu solución por GET");
+  $this->assertTrue(count($rutasGet) == 3, "Debería haber tres rutas en tu solución por GET");
 }
 
 public function testGeneros(): void {
