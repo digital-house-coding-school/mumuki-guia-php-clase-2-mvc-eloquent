@@ -10,7 +10,7 @@ public function testGeneros(): void {
   $ruta == null;
   
   foreach ($rutasGet as $rutas) {
-    if ($rutas["route"] == "generos" || $rutas == "/generos") {
+    if ($rutas["route"] == "generos" || $rutas["route"] == "/generos") {
       $ruta = $rutas;
     }
   }
