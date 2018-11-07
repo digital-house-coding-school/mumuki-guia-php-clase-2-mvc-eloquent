@@ -52,7 +52,9 @@ public function testRutas(): void {
     
     if (count($partes) == 2 && $partes[0] === "peliculas")
     {
-      $ruta = $rutas;
+      if (preg_match("/{[a-zA-Z]+}/", $partes[1]) === 1) {
+        $ruta = $rutas;
+      }
     }
   }
   
