@@ -52,6 +52,7 @@ public function testRutas(): void {
     
     if (count($partes == 2) && $partes[0] === "peliculas")
     {
+      echo 1;exit;
       $ruta = $rutas;
     }
   }
