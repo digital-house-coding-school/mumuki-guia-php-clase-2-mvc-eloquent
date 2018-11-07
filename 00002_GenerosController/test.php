@@ -5,7 +5,7 @@ public function testGenerosController(): void {
 
   $gc = new GenerosController();
   
-  $this->assertTrue(method_exists($gc, 'listado', "Falta el método listado dentro de GenerosController");
+  $this->assertTrue(method_exists($gc, 'listado'), "Falta el método listado dentro de GenerosController");
   
   $resul = $gc->listado();
   
