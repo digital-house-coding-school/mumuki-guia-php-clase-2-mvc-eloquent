@@ -58,7 +58,9 @@ public function testDetallePelicula(): void {
     
     if (count($partes == 2) && $partes[0] === "peliculas")
     {
-      echo "VAMO BIEN";exit;
+      $ruta = $rutas;
     }
   }
+  
+  $this->assertTrue($ruta !== NULL, "sarasa");
 }
