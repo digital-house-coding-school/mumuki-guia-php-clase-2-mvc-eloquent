@@ -63,4 +63,6 @@ public function testDetallePelicula(): void {
   }
   
   $this->assertTrue($ruta !== NULL, "sarasa");
+  
+  $this->assertTrue(is_string($ruta["action"], "sarasa2");
 }
