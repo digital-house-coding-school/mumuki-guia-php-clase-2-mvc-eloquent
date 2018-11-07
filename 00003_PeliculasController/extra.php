@@ -7,7 +7,7 @@ function view($route, $vac = []) {
   
   if ($route == "detallePelicula") {
     if (count($vac) !== 1) {
-      echo "Solamente deberías compartir una variable con la vista");exit;
+      echo "Solamente deberías compartir una variable con la vista";exit;
     }
     
     return $route . array_shift($vac);
