@@ -5,7 +5,7 @@ public function testRutas(): void {
 
   $rutasGet = Route::$routesGet;
   
-  $ruta == null;
+  $ruta = null;
   
   foreach ($rutasGet as $rutas) {
     if ($rutas["route"] == "generos" || $rutas["route"] == "/generos") {
@@ -21,7 +21,7 @@ public function testRutas(): void {
 
   $rutasGet = Route::$routesGet;
   
-  $ruta == null;
+  $ruta = null;
   
   foreach ($rutasGet as $rutas) {
     if ($rutas["route"] == "peliculas" || $rutas["route"] == "/peliculas") {
@@ -37,7 +37,7 @@ public function testRutas(): void {
 
   $rutasGet = Route::$routesGet;
   
-  $ruta == null;
+  $ruta = null;
   
   foreach ($rutasGet as $rutas) {
     $nombreRuta = $rutas["route"];
