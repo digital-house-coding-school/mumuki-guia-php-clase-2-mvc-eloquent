@@ -13,6 +13,7 @@ function view($route, $vac = []) {
     }
     
     $pelicula = array_shift($vac);
+    var_dump($pelicula);exit;
     
     if ($pelicula instanceof Pelicula == false) {
       
