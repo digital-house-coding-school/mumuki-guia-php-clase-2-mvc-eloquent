@@ -186,10 +186,12 @@ class Consulta {
     
     $where = [$col, $operador, $value];
     $this->where[] = $where;
+    return $this;
   }
 
   public function orderBy($col, $order = "ASC") {
     $this->order[] = [$col, $order];
+    return $this;
   }
   
   public function get() {
