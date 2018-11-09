@@ -1,4 +1,5 @@
 $pasePorView = false;
+
 $id = null;
 
 function view($route, $vac = []) {
@@ -26,19 +27,19 @@ function view($route, $vac = []) {
     $wheres = $consulta->where;
     
     if (count($wheres) != 1) {
-      throw new Excepction("Deberías utilizar el metodo where (y una sola vez)");
+      throw new Exception("Deberías utilizar el metodo where (y una sola vez)");
     }
     
     if($wheres[0][0] != "rating") {
-      throw new Excepction("Deberías hacer un filtro sobre la columna rating");
+      throw new Exception("Deberías hacer un filtro sobre la columna rating");
     }
     
     if($wheres[0][1] != ">") {
-      throw new Excepction("Deberías hacer un filtro comparando con el operador de mayor");
+      throw new Exception("Deberías hacer un filtro comparando con el operador de mayor");
     }
     
     if($wheres[0][1] != "8") {
-      throw new Excepction("Deberías hacer un filtro comparando con ratings mayor al número 8");
+      throw new Exception("Deberías hacer un filtro comparando con ratings mayor al número 8");
     }
     
     if (!$consulta->get) {
