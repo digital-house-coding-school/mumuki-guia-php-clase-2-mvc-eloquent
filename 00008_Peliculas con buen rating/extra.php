@@ -38,7 +38,7 @@ function view($route, $vac = []) {
       throw new Exception("Deberías hacer un filtro comparando con el operador de mayor");
     }
     
-    if($wheres[0][1] != "8") {
+    if($wheres[0][2] != "8") {
       throw new Exception("Deberías hacer un filtro comparando con ratings mayor al número 8");
     }
     
