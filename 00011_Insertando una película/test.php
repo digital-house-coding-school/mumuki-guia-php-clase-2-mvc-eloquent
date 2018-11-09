@@ -22,7 +22,7 @@ public function testDetallePelicula(): void {
   $request->awards = 5;
   
   try {
-    $resul = $pc->detalle($request);
+    $resul = $pc->almacenar($request);
   } catch(Exception $e) {
     $this->assertTrue(false, $e->getMessage());
   }
@@ -32,7 +32,7 @@ public function testDetallePelicula(): void {
   $request->awards = 4;
   
   try {
-    $resul = $pc->detalle($request);
+    $resul = $pc->almacenar($request);
   } catch(Exception $e) {
     $this->assertTrue(false, $e->getMessage());
   }
