@@ -1,4 +1,5 @@
 $pasePorView = false;
+
 $id = null;
 
 function view($route, $vac = []) {
@@ -40,19 +41,19 @@ function view($route, $vac = []) {
       throw new Exception("La segunda condición de filtro debe filtrar sobre la coumna rating");
     }
     
-    if($wheres[0][1] == ">" && $wheres[0][1] == "5") {
+    if($wheres[0][1] == ">" && $wheres[0][2] == "5") {
       $filtro5 = true;
     }
     
-    if($wheres[1][1] == ">" && $wheres[1][1] == "5") {
+    if($wheres[1][1] == ">" && $wheres[1][2] == "5") {
       $filtro5 = true;
     }
     
-    if($wheres[0][1] == "<=" && $wheres[0][1] == "8") {
+    if($wheres[0][1] == "<=" && $wheres[0][2] == "8") {
       $filtro8 = true;
     }
     
-    if($wheres[1][1] == "<=" && $wheres[1][1] == "8") {
+    if($wheres[1][1] == "<=" && $wheres[1][2] == "8") {
       $filtro8 = true;
     }
     
