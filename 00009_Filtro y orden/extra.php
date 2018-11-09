@@ -47,11 +47,11 @@ function view($route, $vac = []) {
       throw new Exception("Deberías utilizar el metodo orderBy (y una sola vez)");
     }
     
-    if($wheres[0][0] != "title") {
+    if($orders[0][0] != "title") {
       throw new Exception("Deberías ordenar por la columna title");
     }
     
-    if($wheres[0][1] != "asc" && $wheres[0][1] != "ASC") {
+    if($orders[0][1] != "asc" && $orders[0][1] != "ASC") {
       throw new Exception("Deberías ordenar ascendientemente");
     }
     
