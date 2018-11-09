@@ -172,30 +172,10 @@ class Consulta {
     $where = [$col, $operador, $value];
     $this->where[] = $where;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
- 
- 
- 
- 
-  
-  
-  
-  public function orderBy($col, order = "ASC") {
+
+  public function orderBy($col, $order = "ASC") {
     $this->order[] = [$col, $order];
   }
-  
-  
-  
-  
-  
   
   public function get() {
     $this->get = true;
