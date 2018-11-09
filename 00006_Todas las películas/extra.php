@@ -13,7 +13,8 @@ function view($route, $vac = []) {
     $peliculas = array_shift($vac);
     
     if (!is_array($peliculas) || count($peliculas) != 3 || $peliculas[0] instanceof Pelicula == false || $peliculas[1] instanceof Pelicula == false || $peliculas[2] instanceof Pelicula == false || $peliculas[0]->title != "Toy Story" || $peliculas[1]->title != "Buscando a Nemo" || $peliculas[2]->title != "Cars") {
-      var_dump(!is_array($peliculas));exit;
+      var_dump(count($peliculas) != 3);exit;
+      
       throw new Exception("¿Estas enviando la lista de las películas?");
     }
     
