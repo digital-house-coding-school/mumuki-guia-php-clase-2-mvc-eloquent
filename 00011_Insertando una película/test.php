@@ -9,7 +9,7 @@ public function testDetallePelicula(): void {
   
   $this->assertTrue(count($params) === 1, "El método almacenar debe recibir un parámetro");
   
-  $this->assertTrue($params[0]->getType()->getName() === "Request", "El parámetro recibido por almacenar debe ser tipo Request");
+  $this->assertTrue($params[0]->getType() !== null && $params[0]->getType()->getName() === "Request", "El parámetro recibido por almacenar debe ser tipo Request");
   
   $pasePorRedirect = false;
   
