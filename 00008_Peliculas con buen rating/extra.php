@@ -19,7 +19,7 @@ function view($route, $vac = []) {
       throw new Exception("¿Estas utilizando una consulta de Eloquent?");
     }
     
-    if ($consulta->table != "peliculas") {
+    if ($consulta->table != "movies") {
       throw new Exception("¿Estas haciendo una consulta sobre la tabla de películas?");
     }
     
