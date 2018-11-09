@@ -7,7 +7,7 @@ public function testDetallePelicula(): void {
   $r = new ReflectionMethod("PeliculasController", "almacenar");
   $params = $r->getParameters();
   
-  var_dump($params);exit;
+  var_dump($params[0]->getType());exit;
   
   $pasePorRedirect = false;
   
