@@ -7,7 +7,9 @@ public function testDetallePelicula(): void {
   $r = new ReflectionMethod("PeliculasController", "almacenar");
   $params = $r->getParameters();
   
-  var_dump($params[0]->getType()->getName());exit;
+  $this->assertTrue(count($params) === 1, "El método almacenar debe recibir un parámetro");
+  
+  $this->assertTrue($params[0]->getType()->getName() === "Request", "El parámetro recibido por almacenar debe ser tipo Request");
   
   $pasePorRedirect = false;
   
