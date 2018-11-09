@@ -12,4 +12,12 @@ public function testPelicula(): void {
   $this->assertTrue($pelicula->getGuarded() === [], "El atributo guarded debe ser un array vacío para que todas las columnas de la tabla sean escribibles");
   
   $this->assertTrue(method_exists("Pelicula", "esRecomendada"), "Falta el método esRecomendada en la clase Pelicula");
+  
+  $pelicula->rating = 9;
+  
+  $this->assertTrue($pelicula->esRecomendada() === true, "Una película con rating 9 debería retornar true al preguntar si es es recomendada");
+  
+  $pelicula->rating = 7.9;
+  
+  $this->assertTrue($pelicula->esRecomendada() === false, "Una película con rating 7.9 debería retornar false al preguntar si es es recomendada");
 }
