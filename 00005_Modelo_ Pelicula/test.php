@@ -10,4 +10,6 @@ public function testPelicula(): void {
   $this->assertTrue(is_array($pelicula->getGuarded()), "El atributo guarded debe ser un array");
   
   $this->assertTrue($pelicula->getGuarded() === [], "El atributo guarded debe ser un array vacío para que todas las columnas de la tabla sean escribibles");
+  
+  $this->assertTrue(method_exists("Pelicula", "esRecomendada"), "Falta el método esRecomendada en la clase Pelicula");
 }
