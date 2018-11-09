@@ -2,6 +2,8 @@ public function testDetallePelicula(): void {
   global $pasePorRedirect;
   global $request;
   
+  $request = new Request();
+  
   $this->assertTrue(method_exists("PeliculasController",'almacenar'),"Falta el método almacenar dentro de PeliculasController");
   
   $r = new ReflectionMethod("PeliculasController", "almacenar");
