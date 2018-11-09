@@ -1,5 +1,6 @@
 $pasePorView = false;
 $pasePorRedirect = false;
+$pasePorSave = false;
 
 $id = null;
 
@@ -137,6 +138,9 @@ class Pelicula extends Model {
   
   public function save() {
     global $request;
+    global $pasePorSave;
+    
+    $pasePorSave = true;
     
     if (!isset($this->title)) {
       throw new Exception("La película que esta siendo almacenada no tiene título");

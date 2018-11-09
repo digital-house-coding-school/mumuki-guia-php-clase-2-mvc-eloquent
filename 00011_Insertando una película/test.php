@@ -1,6 +1,7 @@
 public function testDetallePelicula(): void {
   global $pasePorRedirect;
   global $request;
+  global $pasePorSave;
   
   $request = new Request();
   
@@ -36,6 +37,8 @@ public function testDetallePelicula(): void {
   } catch(Exception $e) {
     $this->assertTrue(false, $e->getMessage());
   }
+  
+  $this->assertTrue($pasePorSave, "Mmm...parecería que no estas almacenando nada");
   
   $this->assertTrue($pasePorRedirect, "Parecería que no estas llamando a la función redirect");
   
