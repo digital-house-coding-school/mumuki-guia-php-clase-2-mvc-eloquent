@@ -45,24 +45,31 @@ class Controller {
 }
 
 class Model {
-  $primaryKey = "id";
-  $table = "";
-  $timestamps = true;
-  $guarded = null;
-  
   public function getPrimaryKey() {
-    return $this->primaryKey;
+    if (isset($this->primaryKey) {
+      return $this->primaryKey;
+    }
+    return 'id';
   }
   
   public function getTable() {
-    return $this->table;
+    if (isset($this->table) {
+      return $this->table;
+    }
+    return null;
   }
   
   public function getTimestamps() {
-    return $this->timestamps;
+    if (isset($this->timestamps) {
+      return $this->timestamps;
+    }
+    return true;
   }
   
   public function getGuarded() {
-    return $this->guarded;
+    if (isset($this->guarded) {
+      return $this->guarded;
+    }
+    return null;
   }
 }
