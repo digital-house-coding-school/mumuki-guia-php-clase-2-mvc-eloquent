@@ -180,5 +180,6 @@ class Consulta {
   
   public function get() {
     $this->get = true;
+    return $this;
   }
 }
