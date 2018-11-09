@@ -153,6 +153,11 @@ class Pelicula extends Model {
   }
 }
 
+
+
+
+
+
 class Consulta {
   public $where = [];
   public $order = [];
