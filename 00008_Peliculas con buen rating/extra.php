@@ -188,6 +188,11 @@ class Consulta {
     $this->order[] = [$col, $order];
   }
   
+  
+  
+  
+  
+  
   public function get() {
     $this->get = true;
   }
