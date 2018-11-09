@@ -92,6 +92,8 @@ class Model {
 class Pelicula extends Model {
   public $rating;
   public $title;
+  public $get = false
+  public $where = [];
 
   public static function all() {
     $peli1 = new Pelicula();
@@ -116,4 +118,28 @@ class Pelicula extends Model {
     $peliculas = Pelicula::all();
     return $peliculas[$id - 1];
   }
+  
+  public function get() {
+    $this->get = true;
+    return $this;
+  }
+  
+  public function where($campo, $operador, $valor = null) {
+    if ($valor === null) {
+      $valor = $operador;
+      $operador = "=";
+    }
+    
+    $condicion = [$campo, $operador, $valor];
+    
+    $this->where[] = $condicion;
+    
+    return $this;
+  }
+  
+  public static function where($campo, $operador, $valor = null) {
+    $pelicula = new Pelicula();
+    return $pelicula->where($campo, $operador, $valor);
+  }
+  
 }
