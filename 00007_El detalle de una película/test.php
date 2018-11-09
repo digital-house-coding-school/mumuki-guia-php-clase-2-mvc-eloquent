@@ -13,9 +13,9 @@ public function testDetallePelicula(): void {
     $this->assertTrue(false, $e->getMessage());
   }
   
-  $id = 5;
+  $id = 1;
   try {
-    $resul = $pc->detalle(5);
+    $resul = $pc->detalle(1);
   } catch(Exception $e) {
     $this->assertTrue(false, $e->getMessage());
   }
