@@ -26,11 +26,11 @@ function redirect($route) {
   
   $pasePorRedirect = true;
   
-  if ($route == "listadoPeliculas") {
+  if ($route == "peliculas/listado" || $route === "/peliculas/listado") {
 
     
   } else {
-    throw new Exception("Tras insertar la película se debería redirigir a la vista llamada listadoPeliculas");
+    throw new Exception("Tras insertar la película se debería redirigir a la URL /peliculas/listado");
   }
   
   return $route;
