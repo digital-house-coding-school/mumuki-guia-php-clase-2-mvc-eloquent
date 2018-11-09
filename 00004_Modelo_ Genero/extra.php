@@ -58,7 +58,7 @@ class Model {
     return $this->table;
   }
   
-  public funtion getTimestamps() {
+  public function getTimestamps() {
     return $this->timestamps;
   }
   
