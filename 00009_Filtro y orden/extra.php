@@ -1,5 +1,4 @@
 $pasePorView = false;
-
 $id = null;
 
 function view($route, $vac = []) {
@@ -44,7 +43,7 @@ function view($route, $vac = []) {
     
     $orders = $consulta->order;
     
-    if (count($oders) != 1) {
+    if (count($orders) != 1) {
       throw new Exception("Deberías utilizar el metodo orderBy (y una sola vez)");
     }
     
