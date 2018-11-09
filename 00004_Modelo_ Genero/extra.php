@@ -45,10 +45,10 @@ class Controller {
 }
 
 class Model {
-  public $primaryKey = "id";
-  public $table = "";
-  public $timestamps = true;
-  public $guarded = null;
+  $primaryKey = "id";
+  $table = "";
+  $timestamps = true;
+  $guarded = null;
   
   public function getPrimaryKey() {
     return $this->primaryKey;
