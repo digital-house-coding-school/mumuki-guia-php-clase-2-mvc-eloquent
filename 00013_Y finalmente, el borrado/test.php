@@ -1,7 +1,8 @@
 public function testInsert(): void {
   global $pasePorRedirect;
   global $request;
-  global $pasePorSave;
+  global $pasePorDelete;
+  global $id;
   
   $request = new Request();
   
@@ -18,27 +19,25 @@ public function testInsert(): void {
   
   $pc = new PeliculasController();
   
-  $request->title = "El rey león";
-  $request->rating = 9.2;
-  $request->awards = 5;
+  $request->id = 2;
+  $id = 2;
   
   try {
-    $resul = $pc->almacenar($request);
+    $resul = $pc->eliminar($request);
   } catch(Exception $e) {
     $this->assertTrue(false, $e->getMessage());
   }
   
-  $request->title = "Wall-e";
-  $request->rating = 8.1;
-  $request->awards = 4;
+  $request->id = 29;
+  $id = 29;
   
   try {
-    $resul = $pc->almacenar($request);
+    $resul = $pc->eliminar($request);
   } catch(Exception $e) {
     $this->assertTrue(false, $e->getMessage());
   }
   
-  $this->assertTrue($pasePorSave, "Mmm...parecería que no estas almacenando nada");
+  $this->assertTrue($pasePorDelete, "Mmm...parecería que no estas eliminando nada");
   
   $this->assertTrue($pasePorRedirect, "Parecería que no estas llamando a la función redirect");
   
