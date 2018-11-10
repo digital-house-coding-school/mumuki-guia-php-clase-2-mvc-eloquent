@@ -10,7 +10,7 @@ public function testUpdate(): void {
   $r = new ReflectionMethod("PeliculasController", "actualizar");
   $params = $r->getParameters();
   
-  $this->assertTrue(count($params) === 2, "El método actualizar debe recibir un parámetro");
+  $this->assertTrue(count($params) === 2, "El método actualizar debe recibir dos parámetros");
   
   $this->assertTrue($params[0]->getType() !== null && $params[0]->getType()->getName() === "Request", "El primer parámetro recibido por almacenar debe ser tipo Request");
   
