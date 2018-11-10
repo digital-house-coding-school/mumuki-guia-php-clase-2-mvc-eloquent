@@ -28,8 +28,8 @@ public function testDelete(): void {
     $this->assertTrue(false, $e->getMessage());
   }
   
-  $request->id = 29;
-  $id = 29;
+  $request->id = 3;
+  $id = 3;
   
   try {
     $resul = $pc->eliminar($request);
