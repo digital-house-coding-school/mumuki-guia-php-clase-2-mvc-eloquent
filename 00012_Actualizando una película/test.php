@@ -35,7 +35,7 @@ public function testUpdate(): void {
   $request->secret = 2;
   
   try {
-    $resul = $pc->actualizar($request, $secret);
+    $resul = $pc->actualizar($request, 2);
   } catch(Exception $e) {
     $this->assertTrue(false, $e->getMessage());
   }
