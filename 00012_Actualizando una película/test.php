@@ -12,7 +12,7 @@ public function testUpdate(): void {
   
   $this->assertTrue(count($params) === 2, "El método actualizar debe recibir dos parámetros");
   
-  $this->assertTrue($params[0]->getType() !== null && $params[0]->getType()->getName() === "Request", "El primer parámetro recibido por almacenar debe ser tipo Request");
+  $this->assertTrue($params[0]->getType() !== null && $params[0]->getType()->getName() === "Request", "El primer parámetro recibido por actualizar debe ser tipo Request");
   
   $pasePorRedirect = false;
   
