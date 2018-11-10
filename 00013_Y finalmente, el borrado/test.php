@@ -1,4 +1,4 @@
-public function testInsert(): void {
+public function testDelete(): void {
   global $pasePorRedirect;
   global $request;
   global $pasePorDelete;
