@@ -30,7 +30,7 @@ function redirect($route) {
 
     
   } else {
-    throw new Exception("Tras insertar la película se debería redirigir a la URL /peliculas/listado");
+    throw new Exception("Tras actualizar la película se debería redirigir a la URL /peliculas/listado");
   }
   
   return $route;
