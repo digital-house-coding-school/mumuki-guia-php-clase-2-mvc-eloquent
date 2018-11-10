@@ -5,14 +5,14 @@ public function testInsert(): void {
   
   $request = new Request();
   
-  $this->assertTrue(method_exists("PeliculasController",'almacenar'),"Falta el método almacenar dentro de PeliculasController");
+  $this->assertTrue(method_exists("PeliculasController",'eliminar'),"Falta el método eliminar dentro de PeliculasController");
   
-  $r = new ReflectionMethod("PeliculasController", "almacenar");
+  $r = new ReflectionMethod("PeliculasController", "eliminar");
   $params = $r->getParameters();
   
-  $this->assertTrue(count($params) === 1, "El método almacenar debe recibir un parámetro");
+  $this->assertTrue(count($params) === 1, "El método eliminar debe recibir un parámetro");
   
-  $this->assertTrue($params[0]->getType() !== null && $params[0]->getType()->getName() === "Request", "El parámetro recibido por almacenar debe ser tipo Request");
+  $this->assertTrue($params[0]->getType() !== null && $params[0]->getType()->getName() === "Request", "El parámetro recibido por eliminar debe ser de tipo Request");
   
   $pasePorRedirect = false;
   
