@@ -6,7 +6,7 @@ public function testDobleFiltro(): void {
   $pc = new PeliculasController();
   
   try {
-    $resul = $pc->peliculasAceptables ();
+    $resul = $pc->peliculasAceptables();
   } catch(Exception $e) {
     $this->assertTrue(false, $e->getMessage());
   }
