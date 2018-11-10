@@ -1,4 +1,4 @@
-public function testDetallePelicula(): void {
+public function testDobleFiltro(): void {
   global $pasePorView;
   
   $pasePorView = false;
