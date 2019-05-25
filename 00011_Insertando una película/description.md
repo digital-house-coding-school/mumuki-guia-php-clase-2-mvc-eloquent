@@ -19,7 +19,7 @@ Esta función almacenar deberá:
 
 > 2. Crear un nuevo objeto de tipo `Pelicula`
 
-> 3. Asignarle los atributos al objeto `Pelicula` basandote en los datos provenientes del `Request`. Por suerte, la base de datos tiene los mismos nombres de columnas que los campos <input> en el formulario
+> 3. Asignarle los atributos al objeto `Pelicula` basandote en los datos provenientes del `Request`. Por suerte, la base de datos tiene los mismos nombres de columnas que los campos `<input>` en el formulario
 
 > 4. Llamar al método `save`
 

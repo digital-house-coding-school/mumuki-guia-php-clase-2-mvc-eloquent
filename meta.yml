@@ -3,7 +3,6 @@ name: 'Clase 2: MVC + Eloquent'
 locale: es
 type: learning
 beta: false
-teacher_info: ''
 language: php
 id_format: "%05d"
 order:
@@ -20,3 +19,4 @@ order:
 - 11
 - 12
 - 13
+private: false
