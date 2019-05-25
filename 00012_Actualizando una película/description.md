@@ -19,7 +19,7 @@ Esta función almacenar deberá:
 
 > 2. Obtener un objeto de tipo `Pelicula` mediante el método `find` y el id recibido como parámetro.
 
-> 3. Asignarle los atributos actualizados al objeto `Pelicula` basandote en los datos provenientes del `Request`. Por suerte, la base de datos tiene los mismos nombres de columnas que los campos <input> en el formulario
+> 3. Asignarle los atributos actualizados al objeto `Pelicula` basandote en los datos provenientes del `Request`. Por suerte, la base de datos tiene los mismos nombres de columnas que los campos `<input>` en el formulario
 
 > 4. Llamar al método `save`
 
